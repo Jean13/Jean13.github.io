@@ -4,7 +4,7 @@ Built using JS-based MEAN stack. (MongoDB, ExpressJS, AngularJS, NodeJS).
 
 Contains:
 1. Sample websites I have created
-2. My blog
+2. A link to my blog
 
 Purpose of building website is to practice. As a nice extra I can also display my work.
 
