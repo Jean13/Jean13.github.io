@@ -1,0 +1,258 @@
+.navbar-fixed-top {
+    background: white;
+}
+
+.navbar-toggle {
+    background-color: gray;
+}
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    min-height: 400px;
+}
+
+.row-footer {
+    margin: 0px auto;
+    padding: 10px 0px;
+    background: white;
+    background-repeat: repeat-x;
+    border-top: 1px solid black;
+    border-color: #252525;
+}
+
+.jumbotron {
+    margin: 0px auto;
+    padding: 70px 30px;
+    background-color: darkgray;
+    color: floralwhite;
+    background-image: url(/images/jumbotron.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: Tinos;
+}
+
+#jeanIs {
+    margin: 0px auto;
+    padding: 30px 30px;
+    width: 100%;
+    color: darkseagreen;
+    text-transform: uppercase;
+    border-top: 1px solid green;
+    border-bottom: 1px solid green;
+    background: url(/images/molecule2.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+input.ng-invalid {
+    background-color: lightblue;
+}
+
+.carousel {
+    background: transparent;
+}
+
+.carousel .item {
+    height: 300px;
+}
+
+.carousel .item img {
+    left: 0;
+    min-height: 300px;
+    position: absolute;
+    top: 0;
+}
+
+#carouselTitle {
+    text-shadow: 1px 1px 4px black;
+    color: ghostwhite;
+}
+
+.carousel-indicators {
+    bottom: -10px;
+}
+
+.btn-primary {
+    background: dimgray;
+}
+
+.btn-primary:hover,
+.btn-danger:hover {
+    background: darkorange;
+}
+
+.btn-danger {
+    background: dimgray;
+    border-color: gray;
+}
+
+#boxDescriptions {
+    text-align: center;
+    font-weight: bold;
+}
+
+address {
+    color: #0f0f0f;
+    font-size: 80%;
+    margin: 0px;
+}
+
+body {
+    align: center;
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+    font-family: Electrolize;
+    background-color: whitesmoke;
+}
+
+.tab-content {
+    border-bottom: 1px solid green;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+    padding: 10px;
+}
+
+.affix {
+    top: 100px;
+}
+
+.pagination {
+    margin-left: 50%;
+}
+
+#carouselButtons {
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+#signIn {
+    background-color: dimgray;
+    color: floralwhite;
+}
+
+.vertical-separator {
+    color: black;
+}
+
+.vertical-separator:hover {
+    color: orange;
+}
+
+#websTag,
+#blogTag,
+#aboutTag,
+#contactTag,
+#resumeTag,
+#followJean {
+    color: black;
+    background: white;
+}
+
+#websTag:hover,
+#blogTag:hover,
+#aboutTag:hover {
+    border-bottom: 2px solid black;
+}
+
+#contactTag:hover,
+#resumeTag:hover {
+    border-bottom: 2px solid blue;
+}
+
+#section4 {
+    background-color: white;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#logIn {
+    color: darkorange;
+}
+
+.modal-content {
+    background-color: #1b1b1b;
+    color: darkgray;
+}
+
+#followJean {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#name,
+#email2 {
+    width: 70%;
+}
+
+.input-group {
+    display: table;
+    width: 100%;
+}
+
+#productUpdates {
+    opacity: 0.6;
+    background-color: green;
+    color: floralwhite;
+    text-transform: uppercase;
+}
+
+#homePanels {
+    height: 220px;
+    background-color: transparent;
+}
+
+#wholePanels {
+    background-color: transparent;
+}
+
+#imgBox {
+    margin-left: 10%;
+    min-height: 150px;
+    max-height: 150px;
+    max-width: 256px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.panel-footer {
+    text-align: center;
+    font-weight: bolder;
+    color: black;
+}
+
+.panel-footer > a {
+    color: black;
+}
+
+#shortIntro {
+    text-shadow: 1px 1px 10px black;
+    color: ghostwhite;
+}
+
+#headerJean {
+    text-shadow: 1px 1px 8px black;
+    color: whitesmoke;
+}
+
+.jumbotron > .container > .row > .col-xs-12 > img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 200px;
+}
+
+.container > .row > .col-sm-4 > .panel-group > .panel > a {
+    color: whitesmoke;
+}
