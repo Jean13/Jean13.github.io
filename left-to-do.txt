@@ -1,4 +1,5 @@
 Left to do:
 
 1. Continue building website.
-
+2. Create a "My Investing Philosophy" page and update page accordingly.
+3. Consider adding an "Investment Portfolio" page.

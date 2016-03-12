@@ -151,6 +151,7 @@ body {
 
 #websTag,
 #blogTag,
+#philosophyTag,
 #aboutTag,
 #contactTag,
 #resumeTag,
@@ -161,6 +162,7 @@ body {
 
 #websTag:hover,
 #blogTag:hover,
+#philosophyTag:hover,
 #aboutTag:hover {
     border-bottom: 2px solid black;
 }
@@ -182,8 +184,8 @@ body {
 }
 
 .modal-content {
-    background-color: #1b1b1b;
-    color: darkgray;
+    background-color: white;
+    color: black;
 }
 
 #followJean {
@@ -255,4 +257,19 @@ body {
 
 .container > .row > .col-sm-4 > .panel-group > .panel > a {
     color: whitesmoke;
+}
+
+#philosophy-page {
+    background-color: floralwhite;
+}
+
+#philosophyHeader {
+    margin-top: 4%;
+    margin-bottom: -2%;
+}
+
+#philosophyContainer {
+    padding-left: 8%;
+    padding-right: 8%;
+    font-family: Kreon;
 }

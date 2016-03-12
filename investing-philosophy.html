@@ -21,7 +21,7 @@
     <!-- My styles -->
     <link href="styles/my-styles.css" rel="stylesheet">
     <!-- Google fonts -->
-    <link href='https://fonts.googleapis.com/css?family=Electrolize|Orbitron|Geo|Cinzel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Electrolize|Orbitron|Geo|Cinzel|Kreon' rel='stylesheet' type='text/css'>
 
     <!-- Angular JS (necessary for easier and non-repetitive code) -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
@@ -30,7 +30,7 @@
 
 </head>
 
-<body id="page-homepage">
+<body id="philosophy-page">
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -115,133 +115,41 @@
         </div>
     </div>
 
-    <header class="jumbotron">
-        <div class="container">
-            <div class="row row-header">
-                <div class="col-xs-12 col-sm-8">
-                    <h1 id="headerJean">Jean: Portfolio Website</h1>
-                    <p style="padding:30px;"></p>
-                    <p id="shortIntro">Years of experience and education in finance, investing, law, psychology and technology. Investing across all asset classes worldwide and residential real estate. Developing with the MEAN stack and Java. Over 15 countries traveled so far.
-                        <br/>Over four languages.</p>
-                </div>
-                <div class="col-xs-12 col-sm-4">
-                    <p style="padding: 20px;"></p>
-                    <img src="images/logo.jpg" class="img-responsive">
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <div class="container">
-        <div class="row row-content">
+    <div class="container" id="philosophyContainer">
+        <div class="row row-header">
             <div class="col-xs-12">
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
-                    <!-- Indicators -->
-                    <ol class="carousel-indicators">
-                        <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                        <li data-target="#mycarousel" data-slide-to="1"></li>
-                        <li data-target="#mycarousel" data-slide-to="2"></li>
-                        <li data-target="#mycarousel" data-slide-to="3"></li>
-                    </ol>
-                    <!-- Wrapper for slides -->
-                    <div class="carousel-inner" role="listbox" ng-controller="homeController as homeCtrl">
-                        <div class="{{carousel.type}}" ng-repeat="carousel in homeCtrl.carousel">
-                            <img class="img-responsive" ng-src={{carousel.image}} alt="More Projects">
-                            <div class="carousel-caption">
-                                <h2 id="carouselTitle">{{carousel.name}}</h2>
-                                <p>{{carousel.description}}</p>
-                                <p><a class="btn btn-primary btn-xs" href={{carousel.link}} target="_blank">Discover &raquo;</a></p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Controls -->
-                    <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                    <div class="btn-group" id="carouselButtons">
-                        <button class="btn btn-danger btn-xs" id="carousel-pause">
-                            <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
-                        </button>
-                        <button class="btn btn-danger btn-xs" id="carousel-play">
-                            <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-                        </button>
-                    </div>
-                </div>
+                <h1 id="philosophyHeader">My Investing Philosophy</h1>
             </div>
         </div>
-    </div>
-
-    <div class="container" id="jeanIs">
-        <div class="row">
-            <div class="col-xs-12 col-sm-10">
-                <h2>Investing. Technology. Psychology. = Jean</h2>
-            </div>
-            <div class="col-xs-12 col-sm-2">
-                <p style="padding: 2px;"></p>
-                <a class="btn btn-block btn-sm" id="productUpdates">Updates</a>
-            </div>
-        </div>
-    </div>
-
-    <div id="updateModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Get Progress Updates </h4>
-                </div>
-                <div class="modal-body">
-                    <form class="form-horizontal" role="form">
-                        <div class="form-group">
-                            <label for="name" class="col-xs-12 col-sm-2 control-label">Name</label>
-                            <div class="col-xs-12 col-sm-10">
-                                <div class="input-group">
-                                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Full Name" ng-model="userName" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" class="col-xs-12 col-sm-2 control-label">Email</label>
-                            <div class="col-xs-12 col-sm-10">
-                                <div class="input-group">
-                                    <input type="email" class="form-control" id="email2" name="email" placeholder="Enter Your Email Address" ng-model="userEmail" required>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-xs-12 col-sm-offset-2">
-                                <button type="submit" class="btn btn-primary">Sign Up</button>
-                                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container" id="section4">
         <div class="row row-content" ng-controller="homeController as homeCtrl">
-            <div class="col-xs-12 col-sm-4" ng-repeat="box in homeCtrl.homeBoxes">
-                <div class="panel panel-default" id="wholePanels">
-                    <div class="panel-body" id="homePanels">
-                        <a href={{box.link}} target="_blank">
-                            <img class="img-responsive" ng-src={{box.image}} alt="Platform" id="imgBox">
-                        </a>
-                        <h4 id="boxDescriptions">{{box.description | uppercase}}</h4>
-                    </div>
-                    <div class="panel-footer">
-                        <a href={{box.link}} target="_blank">{{box.comment | uppercase}} <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
-                    </div>
-                </div>
+            <div class="col-xs-12">
+                <h4>Focus on Value</h4>
+                <p style="padding:1px;"></p>
+                <p>Money is made in investing by figuring out what something is worth and paying a lot less. I only invest in businesses that are undervalued. I screen and analyze thousands of companies, but I only buy when the price is low enough that it may provide a satisfactory return and at the same time offer a wide margin of safety.
+                    <p style="padding:1px;"></p>
+                    I place an incredible amount of time and analysis on determining the range of potential outcomes of an investment. I not only look for high returns, but I also look at the risk. I analyze every knowable fact about the business and I talk to management and to all the parties involved in transactions with the company. That means that I also look for potential hidden assets and off-balance-sheet liabilities that enable me to arrive at risk-adjusted valuations. I build multiple scenarios based on financial, operational and legal analysis, and invest when I believe that there is enough downside protection and considerable upside.
+                    <p style="padding:2px;"></p>
+                    My competitive advantages include:
+                    <br/> • <strong>Long-term orientation</strong> – Allowing focus on absolute returns and hence maximum profit.
+                    <br/> • <strong>Education in Finance and Law</strong> – Allowing participation in the distressed market and international financial instruments, and enhancing protection of downside.
+                    <br/> • <strong>Capability to speak multiple languages</strong> – Allowing access to international markets and more in-depth due diligence and understanding of important subtleties.
+                    <br/> • <strong>Focus on Value</strong> – Avoiding investing in overvalued businesses and fads.
+                    <br/> • <strong>Involvement in Technology</strong> – Allowing better understanding of new technologies and how they affect the economy, keeping updated on new developments and capability of valuing technology businesses.
+                    <br/> • <strong>Experience in Real Estate</strong> – Allowing optimum investment and management of properties globally. These competitive advantages have allowed me to successfully invest internationally, in different parts of the capital structure and to make money in all market conditions.
+                <p style="padding:4px;"></p>
+                <h4>Holding Period & Taxes</h4>
+                <p style="padding:2px;"></p>
+                <p>My minimum holding period for investments, excluding special situations, is one year. By holding an investment over the period of a year, returns qualify for capital gains tax. Because I am Puerto Rican, I do not have to pay capital gains tax. That means that if I hold investments for over a year, González-Rosado & Co. partners don’t get taxed at all. Taxes need to be taken into account when investing, they can take a good bite out of profit, and so I make sure to invest in the most tax-efficient way possible.</p>
+                <p style="padding:2px;"></p>
+                <h4>Ultimate Goal</h4>
+                <p style="padding:2px;"></p>
+                <p>My goal is to buy whole businesses, whether through the acquisition of large amounts of stock, through the acquisition of debt, or through purchases in the private sector. In terms of real estate, my goal is to continue to buy and own multi-unit properties. While my beginnings were in the public markets, as my assets under management continue to grow, I will expand into the private sector. My investments then will be in both the public and private markets.</p>
             </div>
         </div>
     </div>
+
+
+
 
     <footer class="row-footer">
         <div class="container">
@@ -271,8 +179,6 @@
     <script src="https:////code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!-- Carousel -->
-    <script src="scripts/carousel.js"></script>
     <!-- Modals: Log In, Updates -->
     <script src="scripts/modals.js"></script>
 
