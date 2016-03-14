@@ -285,3 +285,8 @@ body {
 #financial-header1, #financial-header2, #financial-intro {
     text-align: center;
 }
+
+#financial-intro {
+    font-family: Marcellus;
+    padding-top: 10px;
+}
