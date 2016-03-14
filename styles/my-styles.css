@@ -273,3 +273,15 @@ body {
     padding-right: 8%;
     font-family: Kreon;
 }
+
+#financial-page {
+    background-color: floralwhite;
+}
+
+#financial-header1 {
+    margin-top: 3%;
+}
+
+#financial-header1, #financial-header2, #financial-intro {
+    text-align: center;
+}

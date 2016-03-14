@@ -1,5 +1,12 @@
 Left to do:
 
 1. Continue building website.
-2. Create a "My Investing Philosophy" page and update page accordingly.
+2. Add index charts to the Financial Data page.
 3. Consider adding an "Investment Portfolio" page.
+
+
+Relevant links:
+
+• Financial data API: https://www.quandl.com/docs/api?json#introduction
+• S&P 500 Index data: https://www.quandl.com/data/SPDJ/SPX-S-P-500-Index
+• Good JS Charting Library: https://plot.ly/javascript/

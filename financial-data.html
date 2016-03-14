@@ -8,7 +8,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head
          content must come *after* these tags -->
     <link rel="shortcut icon" type="image/x-icon" href="/images/logo.jpg" height=32 width=32/>
-    <title>Investing Philosophy | Jean's Website</title>
+    <title>Financial Data | Jean's Website</title>
 
     <!-- Latest Bootstrap compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -22,15 +22,18 @@
     <link href="styles/my-styles.css" rel="stylesheet">
     <!-- Google fonts -->
     <link href='https://fonts.googleapis.com/css?family=Electrolize|Orbitron|Geo|Cinzel|Kreon' rel='stylesheet' type='text/css'>
-
     <!-- Angular JS (necessary for easier and non-repetitive code) -->
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
     <!-- JeanApp -->
     <script src="scripts/jeanApp.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https:////code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https:////code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
 
 </head>
 
-<body id="philosophy-page">
+<body id="financial-page" data-spy="scroll" data-target="#myScrollspy" data-offset="200">
 
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
@@ -50,6 +53,9 @@
                         <ul class="dropdown-menu">
                             <li><a href="/websites/phoenix/index.html" target="_blank">Phoenix</a></li>
                             <li><a href="/websites/conFusion/index.html" target="_blank">Ristorante Con Fusion</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">In-site Applications</li>
+                            <li><a href="financial-data.html">Nornir</a></li>
                         </ul>
                     </li>
                     <li class="dropdown">
@@ -115,41 +121,70 @@
         </div>
     </div>
 
-    <div class="container" id="philosophyContainer">
+    <div class="container">
         <div class="row row-header">
             <div class="col-xs-12">
-                <h1 id="philosophyHeader">My Investing Philosophy</h1>
+                <h1 id="financial-header1">Nornir</h1>
+                <h4 id="financial-header2">Real-Time Financial Data</h4>
+                <p id="financial-intro">Scroll down below or make your selection to the right to view selected financial indexes.
+                    <br/>Countries covered include: United States, Japan, Hong Kong and Germany. An index for global commodities is also included.</p>
             </div>
         </div>
-        <div class="row row-content" ng-controller="homeController as homeCtrl">
-            <div class="col-xs-12">
-                <h4>Focus on Value</h4>
-                <p style="padding:1px;"></p>
-                <p>Money is made in investing by figuring out what something is worth and paying a lot less. I only invest in businesses that are undervalued. I screen and analyze thousands of companies, but I only buy when the price is low enough that it may provide a satisfactory return and at the same time offer a wide margin of safety.
-                    <p style="padding:1px;"></p>
-                    I place an incredible amount of time and analysis on determining the range of potential outcomes of an investment. I not only look for high returns, but I also look at the risk. I analyze every knowable fact about the business and I talk to management and to all the parties involved in transactions with the company. That means that I also look for potential hidden assets and off-balance-sheet liabilities that enable me to arrive at risk-adjusted valuations. I build multiple scenarios based on financial, operational and legal analysis, and invest when I believe that there is enough downside protection and considerable upside.
-                    <p style="padding:2px;"></p>
-                    My competitive advantages include:
-                    <br/> • <strong>Long-term orientation</strong> – Allowing focus on absolute returns and hence maximum profit.
-                    <br/> • <strong>Education in Finance and Law</strong> – Allowing participation in the distressed market and international financial instruments, and enhancing protection of downside.
-                    <br/> • <strong>Capability to speak multiple languages</strong> – Allowing access to international markets and more in-depth due diligence and understanding of important subtleties.
-                    <br/> • <strong>Focus on Value</strong> – Avoiding investing in overvalued businesses and fads.
-                    <br/> • <strong>Involvement in Technology</strong> – Allowing better understanding of new technologies and how they affect the economy, keeping updated on new developments and capability of valuing technology businesses.
-                    <br/> • <strong>Experience in Real Estate</strong> – Allowing optimum investment and management of properties globally. These competitive advantages have allowed me to successfully invest internationally, in different parts of the capital structure and to make money in all market conditions.
-                <p style="padding:4px;"></p>
-                <h4>Holding Period & Taxes</h4>
-                <p style="padding:2px;"></p>
-                <p>My minimum holding period for investments, excluding special situations, is one year. By holding an investment over the period of a year, returns qualify for capital gains tax. Because I am Puerto Rican, I do not have to pay capital gains tax. That means that if I hold investments for over a year, González-Rosado & Co. partners don’t get taxed at all. Taxes need to be taken into account when investing, they can take a good bite out of profit, and so I make sure to invest in the most tax-efficient way possible.</p>
-                <p style="padding:2px;"></p>
-                <h4>Ultimate Goal</h4>
-                <p style="padding:2px;"></p>
-                <p>My goal is to buy whole businesses, whether through the acquisition of large amounts of stock, through the acquisition of debt, or through purchases in the private sector. In terms of real estate, my goal is to continue to buy and own multi-unit properties. While my beginnings were in the public markets, as my assets under management continue to grow, I will expand into the private sector. My investments then will be in both the public and private markets.</p>
+        <div class="row row-content">
+
+            <div class="col-xs-12 col-sm-10">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="sp500">
+                        <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~jcarlogonz/12.embed?share_key=fJd113CHfQnJo1gnxtIqnY"></iframe>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-xs-12 col-sm-10">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="nikkei">
+                        <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~jcarlogonz/9.embed"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-10">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="hangSeng">
+                        <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~jcarlogonz/7.embed"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-10">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="dax">
+                        <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~jcarlogonz/14.embed"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-10">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="rogers">
+                        <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~jcarlogonz/16.embed"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <nav class="hidden-xs col-sm-2" id="myScrollspy">
+                <ul class="nav nav-pills nav-stacked" data-spy="affix" data-offset-top="100">
+                    <li><a href="#sp500">SP 500 Index</a></li>
+                    <li><a href="#nikkei">Nikkei 225 Index</a></li>
+                    <li><a href="#hangSeng">Hang Seng Index</a></li>
+                    <li><a href="#dax">DAX Index</a></li>
+                    <li><a href="#rogers">RI Commodity Index</a></li>
+                </ul>
+            </nav>
+
         </div>
+
     </div>
-
-
-
 
     <footer class="row-footer">
         <div class="container">
@@ -174,13 +209,12 @@
         </div>
     </footer>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https:////code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https:////code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <!-- Modals: Log In, Updates -->
     <script src="scripts/modals.js"></script>
+
 
 </body>
 
