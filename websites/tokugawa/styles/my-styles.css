@@ -1,0 +1,306 @@
+#homeBox {
+    background: transparent;
+    background-color: transparent;
+    margin-top: -25%;
+}
+
+.row-footer {
+    padding-top: 5.5%;
+}
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 400px;
+}
+
+.row-footer {
+    margin: 0px auto;
+    background: transparent;
+    background-color: transparent;
+    border-color: #252525;
+    font-family: Tinos;
+}
+
+#destroyerJmbtrn {
+    background-color: #14151a;
+    width: 100%;
+    color: whitesmoke;
+}
+
+#vid-header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#playVid:hover {
+    background-color: midnightblue;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#playVid {
+    max-height: 100px;
+}
+
+html,
+body {
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+
+/*full width container*/
+
+@media (max-width: 767px) {
+    .block {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+}
+
+.navbar-inverse {
+    font-family: Cinzel;
+    background-color: transparent;
+    background: transparent;
+}
+
+address {
+    color: #0f0f0f;
+    font-size: 80%;
+    margin: 0px;
+}
+
+.tab-content {
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    padding: 10px;
+}
+
+#destroyerTList {
+    text-align: center;
+}
+
+#destroyerTList > li {
+    width: 25%;
+    text-transform: uppercase;
+    font-family: Tinos;
+}
+
+.affix {
+    top: 100px;
+}
+
+.pagination {
+    margin-left: 50%;
+}
+
+#carouselButtons {
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+#signIn {
+    background-color: dimgray;
+    color: floralwhite;
+}
+
+.vertical-separator {
+    color: gray;
+}
+
+.vertical-separator:hover {
+    color: orange;
+}
+
+#homeTag:hover,
+#introTag:hover,
+#newsTag:hover,
+#infoTag:hover,
+#reserveTag:hover,
+#accessTag:hover {
+    border-bottom: 2px solid red;
+}
+
+#tokugawaTag:hover,
+#findTag:hover,
+#shopTag:hover,
+#logIn:hover {
+    border-bottom: 2px solid orange;
+}
+
+#supportTag,
+#findTag,
+#shopTag {
+    font-weight: bold;
+}
+
+#logIn {
+    color: darkorange;
+}
+
+.modal-content {
+    background-color: #1b1b1b;
+    color: darkgray;
+    font-family: Tinos;
+}
+
+#followPhx {
+    text-transform: uppercase;
+    color: dimgray;
+}
+
+#name,
+#email2 {
+    width: 70%;
+}
+
+.input-group {
+    display: table;
+    width: 100%;
+}
+
+#productUpdates {
+    opacity: 0.6;
+    background-color: darkblue;
+    color: floralwhite;
+    text-transform: uppercase;
+}
+
+.panel,
+.panel-footer {
+    background: black;
+    opacity: 0.4;
+    font-family: Tinos;
+    color: lightgrey;
+}
+
+#shortIntro {
+    text-shadow: 1px 1px 8px green;
+}
+
+#headerPhnx {
+    text-shadow: 1px 1px 8px red;
+}
+
+#imgBox {
+    margin-left: 5%;
+    min-height: 140px;
+    width: 256px;
+}
+
+#footerImg {
+    height: 40px;
+    width: 102px;
+}
+
+.jumbotron > .container > .row > .col-xs-12 > img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 200px;
+}
+
+#page-destroyer {
+    background-color: #14151a;
+    width: 100%;
+    color: whitesmoke;
+}
+
+#destroyerHead {
+    font-family: Cinzel;
+    text-align: right;
+}
+
+#destroyerIntro {
+    color: whitesmoke;
+    font-family: Tinos;
+    width: 1px;
+    word-wrap: break-word;
+    margin-left: 85%;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+#intro3{
+   color: whitesmoke;
+    font-family: Tinos;
+    width: 100px;
+    word-wrap: break-word;
+    text-transform: uppercase;
+    column-count: 3;
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+}
+
+#intro-text{
+    padding-top: 25px;
+    color: whitesmoke;
+}
+
+#insideHead {
+    text-transform: uppercase;
+    font-family: Kreon;
+}
+
+#insideBody {
+    border-top: dashed 1px dimgray;
+    padding-top: 25px;
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    font-family: Tinos;
+}
+
+.container > .row > .col-sm-4 > .panel-group > .panel > a {
+    color: whitesmoke;
+}
+
+#destroyer-section3 {
+    padding-left: 10%;
+    padding-right: 10%;
+    color: whitesmoke;
+}
+
+#imgTabs {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#dTabHeader,
+#dTabBody {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#dTabHeader {
+    font-family: Tinos;
+}
+
+#dTabBody {
+    font-family: Tinos;
+    font-size: medium;
+}
+
+#lastHead {
+    font-family: Cinzel;
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tokugawaApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head
+         content must come *after* these tags -->
+    <link rel="shortcut icon" type="image/x-icon" href="/websites/tokugawa/images/logo.png" height=32 width=32/>
+    <title>徳川 Introduction</title>
+
+    <!-- Latest Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Bootstrap Social -->
+    <link href="/websites/tokugawa/styles/bootstrap-social.css" rel="stylesheet">
+    <!-- My styles -->
+    <link href="/websites/tokugawa/styles/my-styles.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Kreon|Vollkorn|Geo|Cinzel|Tinos' rel='stylesheet' type='text/css'>
+
+    <!-- Angular JS (necessary for easier and non-repetitive code) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <!-- phoenixApp -->
+    <script src="/websites/tokugawa/scripts/tokugawaApp.js"></script>
+
+
+</head>
+
+<body id="page-destroyer">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collased" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="/websites/tokugawa/images/logo.png" height=30 width=41></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" ng-controller="homeController as homeCtrl">
+                <ul class="nav navbar-nav">
+                    <li ng-repeat="left in homeCtrl.leftNav"><a href={{left.link}} id={{left.id}}>{{left.name}}</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-repeat="right in homeCtrl.rightNav"><a href={{right.link}} id={{right.id}}>{{right.name}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="jumbotron" id="destroyerJmbtrn">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-xs-12">
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container" id="destroyer-section2">
+        <div class="row row-header">
+
+            <div class="col-xs-12 col-sm-3">
+                <h1 id="destroyerHead">徳川</h1>
+                <p style="padding:5px;"></p>
+                <p id="destroyerIntro">Introduction</p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6">
+                <img class="img-responsive" src="/websites/tokugawa/images/intro.jpg">
+                <p id="intro-text">Named after the great ruler who unified Japan, Tokugawa unifies three elements, Beauty in presentation, Purity in quality and Simplicity in design, to bring together dishes that are culturally important to the island nation and delicious. At Tokugawa, our goal is to delighten your senses in an ambient of elegance and tradition, with dishes worthy of an emperor.</p>
+
+            </div>
+
+            <div class="col-xs-12 col-sm-3">
+                <h2 id="intro3">赤 さ と 茜 ら ん 空 さ ぼ ら 流 る</h2>
+            </div>
+
+        </div>
+        <p style="padding: 10px;"></p>
+    </div>
+
+
+    <div class="container" id="destroyer-section3" ng-controller="homeController as homeCtrl">
+        <div class="row row-header">
+            <div class="col-xs-12">
+                <h1 id="insideHead">Inside the Kitchen</h1>
+                <p style="padding:5px;"></p>
+                <p id="insideBody">Delight your senses with some of the most delicious dishes in Japan.</p>
+            </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-xs-12">
+
+                <ul class="nav nav-tabs" role="tablist" id="destroyerTList">
+                    <li role="presentation" ng-class="{active:homeCtrl.isSelected(1)}">
+                        <a ng-click="homeCtrl.select(1)" aria-controls="all" role="tab">All</a></li>
+                    <li role="presentation" ng-class="{active:homeCtrl.isSelected(2)}">
+                        <a ng-click="homeCtrl.select(2)" aria-controls="mainDish" role="tab">Main Dishes</a></li>
+                    <li role="presentation" ng-class="{active:homeCtrl.isSelected(3)}">
+                        <a ng-click="homeCtrl.select(3)" aria-controls="secDish" role="tab">Secondary Dishes</a></li>
+                    <li role="presentation" ng-class="{active:homeCtrl.isSelected(4)}">
+                        <a ng-click="homeCtrl.select(4)" aria-controls="dessert" role="tab">Dessert</a></li>
+                </ul>
+
+                <div class="tab-content">
+                    <ul class="media-list tab-pane fade in active">
+                        <li class="media" ng-repeat="dish in homeCtrl.dishes | filter:homeCtrl.filtText">
+                            <div class="media-top media-middle">
+                                <a href="#">
+                                    <img class="media-object img-thumbnail" ng-src={{dish.image}} alt="Dishes" id="imgTabs" width="800">
+                                </a>
+                            </div>
+                            <div class="media-body">
+                                <div class="media-left media-middle">
+                                    <h2 class="media-heading" id="dTabHeader">{{dish.name}}</h2>
+                                </div>
+                                <div class="media-right media-middle">
+                                    <p id="dTabBody">{{dish.description}}</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="pagination">
+                    <li role="presentation" ng-class="{active:homeCtrl.isSelected(1)}">
+                        <a ng-click="homeCtrl.select(1)" aria-controls="all"></a>
+                    </li>
+                    <li role="presentation" ng-class="{active:homeCtrl.isSelected(2)}">
+                        <a ng-click="homeCtrl.select(2)" aria-controls="mainDish"></a>
+                    </li>
+                    <li role="presentation" ng-class="{active:homeCtrl.isSelected(3)}">
+                        <a ng-click="homeCtrl.select(3)" aria-controls="secDish"></a>
+                    </li>
+                    <li role="presentation" ng-class="{active:homeCtrl.isSelected(4)}">
+                        <a ng-click="homeCtrl.select(4)" aria-controls="dessert"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row" ng-controller="homeController as homeCtrl">
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="list-unstyled list-inline">
+                        <li ng-repeat="box in homeCtrl.footerBoxes">
+                            <a href="{{box.link}}" target="_blank">
+                                <img ng-src={{box.image}} id="footerImg">
+                            </a>
+                        </li>
+
+                        <li><a href="/websites/tokugawa/pages/index.html" class="vertical-separator">Tokugawa © 2016</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="list-unstyled list-inline">
+                        <li id="followPhx">Follow Tokugawa | </li>
+                        <li><a href="#" class="vertical-separator">Facebook</a></li>
+                        <li><a href="#" class="vertical-separator">Twitter</a></li>
+                        <li><a href="#" class="vertical-separator">Instagram</a></li>
+                    </ul>
+                    <audio controls autoplay width="2" height="0">
+                        <source src="/websites/tokugawa/music/spring_song.mp3" type="audio/mp3"> Too bad! Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https:////code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https:////code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Modals -->
+    <script src="/websites/tokugawa/scripts/modals.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="tokugawaApp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head
+         content must come *after* these tags -->
+    <link rel="shortcut icon" type="image/x-icon" href="/websites/tokugawa/images/logo.png" height=32 width=32/>
+    <title>徳川 | Tokugawa</title>
+
+    <!-- Latest Bootstrap compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional Bootstrap theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- Font-awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Bootstrap Social -->
+    <link href="/websites/tokugawa/styles/bootstrap-social.css" rel="stylesheet">
+    <!-- My styles -->
+    <link href="/websites/tokugawa/styles/my-styles.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Electrolize|Orbitron|Geo|Cinzel' rel='stylesheet' type='text/css'>
+
+    <!-- Angular JS (necessary for easier and non-repetitive code) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https:////code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https:////code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- phoenixApp -->
+    <script src="/websites/tokugawa/scripts/tokugawaApp.js"></script>
+    <!-- Carousel -->
+    <script src="/websites/tokugawa/scripts/carousel.js"></script>
+
+</head>
+
+<body id="page-homepage">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collased" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html"><img src="/websites/tokugawa/images/logo.png" height=30 width=41></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse" ng-controller="homeController as homeCtrl">
+                <ul class="nav navbar-nav">
+                    <li ng-repeat="left in homeCtrl.leftNav"><a href={{left.link}} id={{left.id}}>{{left.name}}</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-repeat="right in homeCtrl.rightNav"><a href={{right.link}} id={{right.id}}>{{right.name}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="block">
+        <div id="myCarousel" class="carousel slide">
+            <!-- Carousel pictures -->
+            <div class="carousel-inner" role="listbox" ng-controller="homeController as homeCtrl">
+                <div class="{{carousel.type}}" ng-repeat="carousel in homeCtrl.carousel">
+                    <img class="img-responsive" ng-src={{carousel.image}} alt="Dishes">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="container" id="homeBox">
+        <div class="row" ng-controller="homeController as homeCtrl">
+            <div class="col-xs-12 col-sm-push-8 col-sm-4" ng-repeat="box in homeCtrl.homeBoxes">
+                <div class="panel panel-default">
+                    <div class="panel-body" id="homePanels">
+                        <h4>{{box.description}}</h4>
+                    </div>
+                    <div class="panel-footer">
+                        <p>{{box.comment | uppercase}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row" ng-controller="homeController as homeCtrl">
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="list-unstyled list-inline">
+                        <li ng-repeat="box in homeCtrl.footerBoxes">
+                            <a href="{{box.link}}" target="_blank">
+                                <img ng-src={{box.image}} id="footerImg">
+                            </a>
+                        </li>
+
+                        <li><a href="/websites/tokugawa/pages/index.html" class="vertical-separator">Tokugawa © 2016</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="list-unstyled list-inline">
+                        <li id="followPhx">Follow Tokugawa | </li>
+                        <li><a href="#" class="vertical-separator">Facebook</a></li>
+                        <li><a href="#" class="vertical-separator">Twitter</a></li>
+                        <li><a href="#" class="vertical-separator">Instagram</a></li>
+                    </ul>
+                    <audio controls autoplay width="2" height="0">
+                        <source src="/websites/tokugawa/music/autumn_leaves.mp3" type="audio/mp3"> Your browser does not support the audio element.
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -22,7 +22,7 @@ app.controller('homeController', function () {
 
     var rightNav = [
         {
-            link: "https://evolutioncode.files.wordpress.com/2016/03/jean-gonzacc81lez-c-v.pdf",
+            link: "https://evolutioncode.files.wordpress.com/2016/05/jean-gonzacc81lez-resume.pdf",
             id: "resumeTag",
             name: " CV/Resume"
                 }
@@ -37,6 +37,13 @@ app.controller('homeController', function () {
             name: "",
             description: "",
             link: "/websites/phoenix/index.html"
+        },
+        {
+            type: "item",
+            image: "images/tokugawa.png",
+            name: "",
+            description: "",
+            link: "/websites/tokugawa/pages/index.html"
         },
         {
             type: "item",
