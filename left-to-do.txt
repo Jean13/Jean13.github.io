@@ -1,7 +1,7 @@
 Left to do:
 
-1. Create sexy restaurant website - all pictures my own.
-2. Continue building website.
+1. Continue building website.
+2. Build a fully functional web/app. store.
 3. Consider adding an "Investment Portfolio" page.
 
 
