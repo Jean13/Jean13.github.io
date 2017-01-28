@@ -13,6 +13,11 @@ app.controller('homeController', function () {
                 },
         {
             link: "#",
+            id: "cyberTag",
+            name: " Cyber"
+        },
+        {
+            link: "#",
             id: "aboutTag",
             name: " About"
                 }
