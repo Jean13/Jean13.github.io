@@ -151,6 +151,7 @@ body {
 
 #websTag,
 #blogTag,
+#cyberTag,
 #philosophyTag,
 #aboutTag,
 #contactTag,
@@ -161,6 +162,7 @@ body {
 }
 
 #websTag:hover,
+#cyberTag:hover,
 #blogTag:hover,
 #philosophyTag:hover,
 #aboutTag:hover {
