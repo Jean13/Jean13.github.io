@@ -22,7 +22,7 @@ app.controller('homeController', function () {
 
     var rightNav = [
         {
-            link: "https://evolutioncode.files.wordpress.com/2016/05/jean-gonzacc81lez-resume.pdf",
+            link: "https://evolutioncode.files.wordpress.com/2017/01/jean_cv_online.pdf",
             id: "resumeTag",
             name: " CV/Resume"
                 }
