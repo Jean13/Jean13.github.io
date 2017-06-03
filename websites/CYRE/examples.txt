@@ -1,0 +1,13 @@
+Model after:
+* Zerodium : https://zerodium.com/                                      (For layout)
+* Phoenix  : https://jean13.github.io/websites/phoenix/index.html       (For layout)
+* Jean     : https://jean13.github.io/index.html                        (For layout)
+* Janssen  : http://www.janssen.com/                                    (For layout)
+* Raytheon : http://www.raytheoncyber.com/                   (For content naming; Not layout)
+
+
+Focus: Simplicity, Elegance, Technologically Advanced
+Note: My style is the best and is the most accepted (See Jean and Phoenix)
+
+For backend:
+Can have Kali act as server for back-end functionality testing purposes.

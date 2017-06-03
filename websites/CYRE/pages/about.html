@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="corApp">
+<head id ="head">
+    <!-- Angular JS (necessary for easier and non-repetitive code) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+    <!-- corApp (replace this with the AngularJS functionality script path) -->
+    <script src="../scripts/corApp.js"></script>
+</head> 
+
+<body id="page-about">
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collased" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.html"><img src="../images/logo.png" width=100></a>
+            </div>
+
+            <div id="navbar" class="navbar-collapse collapse" ng-controller="homeController as homeCtrl">
+                <ul class="nav navbar-nav navbar-right">
+                    <li ng-repeat="right in homeCtrl.rightNav" class="dropdown">
+                        <a href={{right.link}} id={{right.id}} data-toggle="dropdown">{{right.name}}</a>
+                        <ul class="dropdown-menu">
+                            <li id = {{right.sub}}>
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>   
+    
+    
+    <!-- About Header -->
+    <div class="container" id="about-top">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>About Us</h2>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- About Jumbotron -->
+    <header class="jumbotron" id="aboutJumbo">
+        <div class="container">
+            <div class="row row-header">
+                <div class="col-xs-12">
+                    <h1 id="aboutCYRE">CYRE</h1>
+                    <p style="padding:10px;"></p>
+                    
+                    <p id="about-text">
+                    <img src="../images/logo.png" width=100 alt="CYRE logo" align="left">
+                    &nbsp;&nbsp;&nbsp; CYRE is a cybersecurity company with operations in North America, Europe, and Asia. CYRE was founded by cybersecurity veterans with unparalleled experience in advanced vulnerability research, active cyber defense, multi-tiered intelligence collection and analysis, and offensive operations. 
+                    <br></br>
+                    CYRE was built with the goals of aiding governments in protecting their national interests, and supporting organizations in advancing their corporate strategies and proactively defending their assets.
+                    <br></br>
+                    For more information about our corporate services and solutions and our tailored cybersecurity capabilities for governments, please <a href="mailto:#">contact us</a>. Access to certain CYRE capabilities and solutions are restricted to organizations with government approval. To learn more about how CYRE can help your organization traverse the cyber landscape, <a href="mailto:#">contact us now</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+   <!-- Expanded Dropdowns -->
+    <div class="container" id="dropContainer">
+        <div class="row row-content" ng-controller="homeController as homeCtrl">
+            <div class="col-xs-12 col-sm-3" ng-repeat="column in homeCtrl.dropColumns">
+                <ul class="list-unstyled">
+                <li id="dropHead">{{column.contact | uppercase}}</li>
+                <li id="dropAddress">{{column.address}}</li>
+                <li><a href={{column.link}}> {{column.email | uppercase}}</a></li>
+                <p style="padding:.5px;"></p>
+                <li id="dropHead">{{column.presence | uppercase}}</li>
+                <li><a href={{column.link1}}>{{column.office1}}</a></li>
+                <li><a href={{column.link2}}>{{column.office2}}</a></li>
+                <li><a href={{column.link3}}>{{column.office3}}</a></li>
+                <li><a href={{column.link4}}>{{column.office4}}</a></li>
+                <li><a href={{column.link5}}>{{column.office5}}</a></li>
+                <li><a href={{column.link6}}>{{column.office6}}</a></li>
+                <li id="dropHead"><a href={{column.link1}}>{{column.careers}}</a></li>
+                <li id="dropHead"><a href={{column.link2}}>{{column.about}}</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>    
+    
+    
+    <!-- Footer -->
+    <footer class="row-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="list-unstyled list-inline">
+                        <li><a href="index.html" class="vertical-separator">Copyright © 2017, CYRE Corporation </a></li>
+                        <n> 
+                        <li></li>
+                        </n>
+                        <li><a href="#" class="vertical-separator">All Rights Reserved.</a></li>
+                        <li>|</li>   
+                        <li><a href="#" class="vertical-separator">Legal</a></li>
+                        <li><a href="#" class="vertical-separator">Privacy</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <ul class="list-unstyled list-inline">
+                        <li id="followCYRE">Follow CYRE | </li>
+                        <li><a href="#" class="vertical-separator">Facebook</a></li>
+                        <li><a href="#" class="vertical-separator">Twitter</a></li>
+                        <li><a href="#" class="vertical-separator">YouTube</a></li>
+                        <li><a href="#top" class="vertical-separator">| Back To Top</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https:////code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https:////code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <!-- Load head scripts -->
+    <script src="../scripts/load_head.js"></script>
+    <!-- Load dropdowns -->
+    <script src="../scripts/dropdowns.js"></script>
+    <!-- Modals -->
+    <script src="../scripts/modals.js"></script>  
+    
+      
+</body>
+</html>

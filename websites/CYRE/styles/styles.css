@@ -1,0 +1,394 @@
+.row-header {
+    margin: 0px auto;
+    padding: 0px 0px;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-top: 1px ridge;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+
+.row-footer {
+    margin: 0px auto;
+    padding: 20px 0px;
+    background-color: white;
+    background-repeat: repeat-x;
+    border-color: #252525;
+    font-family: Tinos;
+}
+
+#mainJumbo {
+    background-color: darkgray;
+    color: floralwhite;
+    background-image: url(../images/header.jpg);
+    font-family: Tinos;
+    margin: 0px auto;
+}
+
+#prototype {
+    background-color: silver;
+    background-image: url(../images/vuln.png);
+    color: floralwhite;
+    margin: 0px auto;
+    padding: 30px 30px;
+    width: 100%;
+}
+
+#about-top {
+    background-color: ghostwhite;
+    color: purple;
+    font-family: Cinzel;
+    font-weight: bold;
+    margin-top: 5%;
+    width: 100%;
+    padding: 20px 20px;
+}
+
+#aboutJumbo {
+    margin: 0px auto;
+    background-color: white;
+    color: silver;
+}
+
+#aboutCYRE {
+    text-align: center;
+    font-weight: 300;
+    color: darkmagenta;
+    font-size: 48px;
+    border-bottom: 1px ridge;
+    font-family: Orbitron;
+}
+
+
+#about-text {
+    font-size: 16px;
+}
+
+#homeButtons {
+    text-align: center;
+}
+
+.btn-primary {
+    background: purple;
+}
+
+
+
+
+
+#destroyerJmbtrn {
+    background-color: black;
+    background: url(/websites/phoenix/images/header.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#vid-header {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#playVid:hover {
+    background-color: midnightblue;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+#playVid {
+    max-height: 100px;
+}
+
+.carousel {
+    background: #1a237e;
+}
+
+.carousel .item {
+    height: 300px;
+}
+
+.carousel .item img {
+    left: 0;
+    min-height: 300px;
+    position: absolute;
+    top: 0;
+}
+
+.navbar-inverse {
+    color: #ffffff;
+    font-family: Cinzel;
+    background-image: none;
+    background-color: white;
+}
+
+.navbar-inverse .navbar-nav > .open > a {
+    color: purple;
+    background: whitesmoke;
+}
+
+.navbar-inverse .navbar-nav > .open > a:focus {
+    color: purple;
+    background-color: whitesmoke;
+    
+}
+
+.navbar-inverse .navbar-nav .open .dropdown-menu {
+    background: whitesmoke;
+    font-family: Tinos;
+    text-align: center;
+}
+
+address {
+    color: #0f0f0f;
+    font-size: 80%;
+    margin: 0px;
+}
+
+#navbar {
+    margin-top: 2.5%;  
+}
+
+
+body {
+    align: center;
+    padding: 50px 0px 0px 0px;
+    z-index: 0;
+}
+
+#dropHead {
+    font-weight: bold;
+}
+
+.tab-content {
+    border-bottom: 1px solid #dddddd;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+    padding: 10px;
+}
+
+#destroyerTList {
+    text-align: center;  
+}
+
+#destroyerTList > li {
+    width: 25%;
+    text-transform: uppercase;
+    font-family: Tinos;
+}
+
+.affix {
+    top: 100px;
+}
+
+.pagination {
+    margin-left: 50%;
+}
+
+#carouselButtons {
+    bottom: 0px;
+    position: absolute;
+    right: 0px;
+}
+
+#signIn {
+    background-color: dimgray;
+    color: floralwhite;
+}
+
+.vertical-separator {
+    color: gray;
+}
+
+.vertical-separator:hover {
+    color: purple;
+}
+
+#productTag:hover,
+#modelTag:hover,
+#destroyerTag:hover,
+#powerTag:hover {
+    border-top: 2px solid purple;
+    color: purple;
+}
+
+#supportTag:hover,
+#findTag:hover,
+#shopTag:hover,
+#logIn:hover {
+    border-bottom: 2px solid blue;
+}
+
+#supportTag,
+#findTag,
+#shopTag {
+    font-weight: bold;
+}
+
+#logIn {
+    color: darkorange;
+}
+
+.modal-content {
+    background-color: #1b1b1b;
+    color: darkgray;
+    font-family: Tinos;
+}
+
+#followCYRE {
+    text-transform: uppercase;
+    color: darkmagenta;
+}
+
+#dropAddress {
+    color: brown;
+}
+
+#name,
+#org_name,
+#email2 {
+    width: 70%;
+}
+
+.input-group {
+    display: table;
+    width: 100%;
+}
+
+#productInquiry {
+    opacity: 0.6;
+    background-color: darkblue;
+    color: floralwhite;
+    text-transform: uppercase;
+}
+
+#homePanels {
+    height: 230px;
+}
+
+#shortIntro {
+    text-shadow: 1px 1px 2x purple;
+    text-align: center;
+}
+
+#headerCYRE {
+    text-shadow: 1px 1px 8px purple;
+    text-align: center;
+}
+
+#imgBox {
+    margin-left: 5%;
+    min-height: 140px;
+    width: 256px;
+}
+
+.jumbotron > .container > .row > .col-xs-12 > img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 200px;
+}
+
+#destroyer-section2 {
+    background-color: #14151a;
+    width: 100%;
+    color: whitesmoke;
+}
+
+#destroyerHead {
+    font-family: Cinzel;  
+}
+
+#destroyerIntro {
+    border-top: dashed 1px dimgray;
+    padding-top: 25px;
+    color: whitesmoke;
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    font-family: Tinos;
+}
+
+#insideHead {
+    text-transform: uppercase;
+    font-family: Kreon;
+}
+
+#insideBody {
+    border-top: dashed 1px dimgray;
+    padding-top: 25px;
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    font-family: Tinos;
+}
+
+#destroyerPanel1 {
+    column-count: 2;
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    margin-top: 25px;
+}
+
+#destroyerPanel1,
+#destroyerPanel2,
+#destroyerPanel3 {
+    background-color: #1b1d24;
+    text-transform: uppercase;
+    font-family: Tinos;
+    font-size: small;
+}
+
+#destroyerThumb {
+    max-height: 50px;
+    border-radius: 6px;
+}
+
+.container > .row > .col-sm-4 > .panel-group > .panel > a {
+    color: whitesmoke;
+}
+
+#destroyer-section3 {
+    background-color: whitesmoke;
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#imgTabs {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#dTabHeader,
+#dTabBody {
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#dTabHeader {
+    font-family: Tinos;
+}
+
+#dTabBody {
+    font-family: Tinos;
+    font-size: medium;
+}
+
+#destroyer-section4 {
+    text-align: center;
+    margin-bottom: 2.5%;
+}
+
+#destroyerBoxDates {
+    text-transform: uppercase;
+    color: dimgray;
+    font-family: Tinos;
+}
+
+#lastHead {
+    font-family: Cinzel;
+}
