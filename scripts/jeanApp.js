@@ -52,7 +52,7 @@ app.controller('homeController', function () {
         },
         {
             type: "item",
-            image: "images/cyre.png",
+            image: "images/CYRE.png",
             name: "",
             description: "",
             link: "/websites/CYRE/pages/index.html"
