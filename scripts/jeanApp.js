@@ -52,6 +52,13 @@ app.controller('homeController', function () {
         },
         {
             type: "item",
+            image: "images/cyre.png",
+            name: "",
+            description: "",
+            link: "/websites/CYRE/pages/index.html"
+        },
+        {
+            type: "item",
             image: "images/blog.png",
             name: "",
             description: "",
@@ -62,7 +69,7 @@ app.controller('homeController', function () {
             image: "images/more-projects.jpg",
             name: "More Projects",
             description: "",
-            link: "https://evolutioncode.wordpress.com/github-page/"
+            link: "https://github.com/Jean13"
         }
     ];
 
