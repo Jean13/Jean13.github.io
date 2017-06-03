@@ -92,7 +92,7 @@ app.controller('homeController', function () {
             image: 'images/me.jpg',
             description: "About Me",
             comment: "Learn more",
-            link: "https://evolutioncode.wordpress.com/about-me/"
+            link: "https://tuonilabs.wordpress.com/about/"
                 }
             ];
 
